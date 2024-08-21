@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 2px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 97%;
+    margin: 0px auto;
+    /* 
+    border: 1px solid red;
+     */
+}
+header{
+
+ /* background-color: red;*/
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px dashed white;
+}
+ /*efecto*/
+ a{
+    border: 2px solid blue;
+    background-color:black;
+    color: crimson;
+    border-radius: 10px;
+    padding:5px 10px ;
+       text-decoration: none;
+}
+a:hover{
+    background-color: crimson;
+    color: white;
+    padding: 6px 20px;
+    transition-duration: 1000ms;
+}
+.clearfix{
+    clear: both;
+}
+#content{
+    float: left;
+    width: 65%;
+    min-height: 500px;
+    background: green;
+    
+}
+aside{
+    float: right;
+    width: 35%;
+    background: orange;
+    min-height: 500px;
+
+}  
+.asi{
+    float: right;
+}
+.foo1{
+    float: left;
+}
+.ta1{
+    border: 2px solid white;
+}
