@@ -21,8 +21,10 @@ nav {
     display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor de navegación */
     align-items: center; /* Centra verticalmente los elementos dentro del contenedor de navegación */
     padding: 0 20px; /* Agrega un espacio interno de 20px a los lados del contenedor de navegación */
-    position: relative; /* Posiciona el elemento en relación con su posición original en el flujo del documento.
+    position: fixed; /* Posiciona el elemento en relación con su posición original en el flujo del documento.
      Permite ajustes con top, right, bottom y left sin alterar el espacio ocupado. */
+     top:0;
+     z-index: 1000;
 
 }
 
@@ -85,3 +87,8 @@ nav label.logo a.gatonegro {
     transition: none; /* Desactiva las transiciones */
 }
 
+h1.venta{
+   
+    font-weight: bold;
+
+}

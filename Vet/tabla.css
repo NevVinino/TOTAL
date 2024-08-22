@@ -1,0 +1,29 @@
+/* Estilos para la tabla */
+table.ini {
+    width: 50%; /* Establece el ancho de la tabla al 50% del contenedor */
+    margin: 0 auto; /* Centra la tabla horizontalmente en la página */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas para que se vean como un solo borde */
+    text-align: center; /* Centra el texto en las celdas */
+    border: 2px solid black; /* Establece un borde negro de 2px alrededor de la tabla */
+}
+
+/* Estilos para las celdas de la tabla */
+table.ini th,
+table.ini td {
+    border: 10px solid black; /* Establece un borde negro de 10px alrededor de las celdas */
+    padding: 10px; /* Agrega un relleno de 10px dentro de las celdas */
+}
+
+/* Estilos para las imágenes dentro de las celdas */
+table.ini td img {
+    display: block; /* Hace que la imagen se comporte como un bloque, permitiendo centrarla */
+    margin: 0 auto 10px; /* Centra la imagen horizontalmente y agrega un margen de 10px en la parte inferior */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del ancho de la celda */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+/* Estilo para los textos dentro de las celdas */
+table.ini td span {
+    display: block; /* Hace que los textos sean bloques para que se apilen verticalmente */
+    margin-top: 5px; /* Agrega un margen superior de 5px entre el texto y otros elementos */
+}
