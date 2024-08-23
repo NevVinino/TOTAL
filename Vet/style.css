@@ -77,6 +77,19 @@ a.active:hover {
     color: white; /* Mantiene el texto blanco al pasar el cursor */
 }
 
+/* Estilo para enlaces con la clase active1 */
+a.active1{
+    color: black; /* Cambia el color del texto a blanco */
+    transition: .8s; /* Transición suave */
+
+    padding: 7px 50px; /* Agrega un relleno interno alrededor del texto de los enlaces */
+    border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
+}
+
+a.active1:hover {
+    background: black; /* Fondo amarillo solo al pasar el cursor */
+    color: white; /* Mantiene el texto blanco al pasar el cursor */
+}
 
 /* Estilo específico para el enlace dentro del label */
 nav label.logo a.gatonegro {
@@ -90,5 +103,5 @@ nav label.logo a.gatonegro {
 h1.venta{
    
     font-weight: bold;
-
+    text-align: center;
 }

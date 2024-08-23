@@ -1,0 +1,94 @@
+/* Reseteo de estilos básicos */
+* {
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    text-decoration: none; /* Elimina cualquier subrayado o decoración de texto predeterminada en enlaces */
+    list-style: none; /* Elimina los estilos de lista predeterminados (como viñetas) en listas */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para el contenedor del menú de navegación */
+nav {
+    font-family: Arial, Helvetica, sans-serif ;/* Aplica la fuente 'Montserrat' a todo el texto del documento */
+    background-color: white; /* Establece el color de fondo del contenedor de navegación */
+    height: 80px; /* Fija la altura del contenedor de navegación */
+    width: 100%; /* Hace que el contenedor de navegación ocupe todo el ancho de la pantalla */
+    display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor de navegación */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor de navegación */
+    padding: 0 20px; /* Agrega un espacio interno de 20px a los lados del contenedor de navegación */
+    position: fixed; /* Posiciona el elemento en relación con su posición original en el flujo del documento.
+     Permite ajustes con top, right, bottom y left sin alterar el espacio ocupado. */
+     top:0;
+     z-index: 1000;
+
+}
+
+/* Estilos para el logo */
+nav img.log {
+    height: 60px; /* Fija la altura del logo */
+    margin-right: 20px; /* Agrega un espacio a la derecha del logo */
+}
+
+/* Estilos para el texto del logo */
+label.logo {
+    color: black; /* Establece el color del texto del logo en negro */
+    font-size: 35px; /* Fija el tamaño de la fuente del logo a 35px */
+    line-height: 80px; /* Establece la altura de línea del logo para alinearlo verticalmente dentro del contenedor */
+    font-weight: bold; /* Aplica un estilo de texto en negrita al logo */
+    margin-right: 20px; /* Agrega un espacio a la derecha del texto del logo */
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    display: flex; /* Usa flexbox para alinear horizontalmente los elementos de la lista */
+    margin-left: auto; /* Empuja la lista de navegación hacia la derecha */
+}
+
+nav ul li {
+    display: inline-block; /* Hace que cada elemento de la lista se alinee en línea y se comporte como un bloque */
+    line-height: 80px; /* Establece la altura de línea para alinear los elementos verticalmente dentro del contenedor de navegación */
+    margin: 0 5px; /* Agrega un margen de 5px a cada lado de los elementos de la lista */
+}
+
+nav ul li a {
+    color: black; /* Establece el color del texto de los enlaces en negro */
+    font-size: 17px; /* Fija el tamaño de la fuente de los enlaces a 17px */
+    padding: 7px 13px; /* Agrega un relleno interno alrededor del texto de los enlaces */
+    border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
+    text-transform: uppercase; /* Convierte el texto de los enlaces a mayúsculas */
+    font-weight: bold; /* Aplica un estilo de texto en negrita a los enlaces */
+    transition: background 0.3s, border-radius 0.3s; /* Agrega una transición suave para el color de fondo y el borde redondeado cuando se interactúa con el enlace */
+}
+
+/* Estilo para enlaces con la clase active */
+a.active {
+    color: black; /* Cambia el color del texto a blanco */
+    transition: .8s; /* Transición suave */
+}
+
+/* Estilo para cuando el cursor pasa sobre enlaces con la clase active */
+a.active:hover {
+    background: black; /* Fondo amarillo solo al pasar el cursor */
+    color: white; /* Mantiene el texto blanco al pasar el cursor */
+}
+
+
+/* Estilo específico para el enlace dentro del label */
+nav label.logo a.gatonegro {
+    color: black; /* Color del texto del enlace en negro */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+    background: none; /* Elimina cualquier fondo */
+    transition: none; /* Desactiva las transiciones */
+}
+
+h1.venta{
+   
+    font-weight: bold;
+
+}
