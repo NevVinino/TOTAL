@@ -33,19 +33,68 @@
     object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
 }
 
-/* Muestra solo el elemento activo */
-.textOverlay {
+/* Muestra solo el elemento activo izquierda primera imagen*/
+.textOverlay1 {
+    position: absolute; /* Posiciona el texto en relación con el contenedor padre */
+    bottom: 250px; /* Desplaza el texto 10px desde la parte inferior del contenedor */
+    left: 100px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
+    color: black; /* Color del texto */
+    font-size: 44px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-align: left; /* Alinea el texto a la derecha */
+}
+
+/* Muestra solo el elemento activo derecha segunda imagen*/
+.textOverlay21 {
+    position: absolute; /* Posiciona el texto en relación con el contenedor padre */
+    bottom: 300px; /* Desplaza el texto 10px desde la parte inferior del contenedor */
+    right: 100px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
+    color: black; /* Color del texto */
+    font-size: 34px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+.textOverlay22 {
     position: absolute; /* Posiciona el texto en relación con el contenedor padre */
     bottom: 10px; /* Desplaza el texto 10px desde la parte inferior del contenedor */
-    right: 10px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
+    right: 90px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
     color: black; /* Color del texto */
-    font-size: 24px; /* Tamaño del texto */
+    font-size: 34px; /* Tamaño del texto */
     font-weight: bold; /* Texto en negrita */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
     z-index: 10; /* Asegura que el texto esté por encima de la imagen */
     text-align: right; /* Alinea el texto a la derecha */
 }
 
+
+/* Muestra solo el elemento activo derecha tercera imagen*/
+.textOverlay31 {
+    position: absolute; /* Posiciona el texto en relación con el contenedor padre */
+    bottom: 300px; /* Desplaza el texto 10px desde la parte inferior del contenedor */
+    right: 60px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
+    color: black; /* Color del texto */
+    font-size: 29px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.textOverlay32 {
+    position: absolute; /* Posiciona el texto en relación con el contenedor padre */
+    bottom: 200px; /* Desplaza el texto 10px desde la parte inferior del contenedor */
+    right: 60px; /* Desplaza el texto 10px desde la parte derecha del contenedor */
+    color: black; /* Color del texto */
+    font-size: 29px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+    z-index: 10; /* Asegura que el texto esté por encima de la imagen */
+    text-align: right; /* Alinea el texto a la derecha */
+}
 
 .itemCarrouselArrows {
     position: absolute;

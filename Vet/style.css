@@ -81,7 +81,7 @@ a.active:hover {
 a.active1{
     color: black; /* Cambia el color del texto a blanco */
     transition: .8s; /* Transición suave */
-
+    font-size: 19px; /* Tamaño del texto */
     padding: 7px 50px; /* Agrega un relleno interno alrededor del texto de los enlaces */
     border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
 }
@@ -89,6 +89,7 @@ a.active1{
 a.active1:hover {
     background: black; /* Fondo amarillo solo al pasar el cursor */
     color: white; /* Mantiene el texto blanco al pasar el cursor */
+
 }
 
 /* Estilo específico para el enlace dentro del label */
@@ -104,4 +105,62 @@ h1.venta{
    
     font-weight: bold;
     text-align: center;
+}
+
+
+/* Estilo para la sección de "Sobre Nosotros" */
+.nosotros-section {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    background-color: #d3d3d3; /* Fondo color plomo claro */
+    padding: 40px; /* Espaciado interno de la tabla */
+    border-spacing: 20px; /* Espacio entre las celdas de la tabla */
+    text-align: justify; /* Alinea el texto en ambas márgenes */
+}
+
+/* Estilo para la columna de texto */
+.nosotros-text {
+    color: black; /* Texto en color blanco */
+    font-size: 19px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    vertical-align: top; /* Alinea el texto al principio de la celda */
+}
+
+/* Estilo para la columna de imagen */
+.nosotros-image img {
+    width: 100%; /* La imagen ocupa todo el ancho de la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+/* Estilo para enlaces con la clase active1 */
+a.active3{
+    color: black; /* Cambia el color del texto a blanco */
+    transition: .8s; /* Transición suave */
+    font-size: 20px; /* Tamaño del texto */
+    padding: 7px 50px; /* Agrega un relleno interno alrededor del texto de los enlaces */
+    border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
+}
+
+a.active3:hover {
+    background: black; /* Fondo negro solo al pasar el cursor */
+    color: white; /* Mantiene el texto blanco al pasar el cursor */
+
+}
+
+/* Estilo para enlaces con la clase active2 */
+a.active2 {
+    color: yellow; /* Texto de color amarillo */
+    background-color: black; /* Fondo negro */
+    transition: all 0.3s ease; /* Transición más rápida y suave */
+    font-size: 20px; /* Tamaño del texto */
+    padding: 7px 50px; /* Relleno interno para que el enlace sea más clickeable */
+    border-radius: 20px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block; /* Asegura que los padding y border-radius se apliquen correctamente */
+}
+
+/* Efecto al pasar el cursor */
+a.active2:hover {
+    background-color:yellow; /* Cambia el fondo a amarillo al pasar el cursor */
+    color: black; /* Cambia el texto a negro al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño para dar un efecto de resalte */
 }
