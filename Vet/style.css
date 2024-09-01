@@ -15,7 +15,7 @@ body{
 /* Estilos para el contenedor del menú de navegación */
 nav {
     font-family: Arial, Helvetica, sans-serif ;/* Aplica la fuente 'Montserrat' a todo el texto del documento */
-    background-color: white; /* Establece el color de fondo del contenedor de navegación */
+    background-color:  #333333; /* Establece el color de fondo del contenedor de navegación */
     height: 80px; /* Fija la altura del contenedor de navegación */
     width: 100%; /* Hace que el contenedor de navegación ocupe todo el ancho de la pantalla */
     display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor de navegación */
@@ -67,29 +67,16 @@ nav ul li a {
 
 /* Estilo para enlaces con la clase active */
 a.active {
-    color: black; /* Cambia el color del texto a blanco */
+    color: yellow; /* Cambia el color del texto a amarillo */
+    background-color: black;
     transition: .8s; /* Transición suave */
 }
 
 /* Estilo para cuando el cursor pasa sobre enlaces con la clase active */
 a.active:hover {
-    background: black; /* Fondo amarillo solo al pasar el cursor */
-    color: white; /* Mantiene el texto blanco al pasar el cursor */
-}
-
-/* Estilo para enlaces con la clase active1 */
-a.active1{
-    color: black; /* Cambia el color del texto a blanco */
-    transition: .8s; /* Transición suave */
-    font-size: 19px; /* Tamaño del texto */
-    padding: 7px 50px; /* Agrega un relleno interno alrededor del texto de los enlaces */
-    border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
-}
-
-a.active1:hover {
-    background: black; /* Fondo amarillo solo al pasar el cursor */
-    color: white; /* Mantiene el texto blanco al pasar el cursor */
-
+    background-color: yellow; /* Fondo amarillo solo al pasar el cursor */
+    color: black; /* Mantiene el texto blanco al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño para dar un efecto de resalte */
 }
 
 /* Estilo específico para el enlace dentro del label */
@@ -120,7 +107,7 @@ h1.venta{
 /* Estilo para la columna de texto */
 .nosotros-text {
     color: black; /* Texto en color blanco */
-    font-size: 19px; /* Tamaño de fuente */
+    font-size: 24px; /* Tamaño de fuente */
     line-height: 1.6; /* Espaciado entre líneas */
     vertical-align: top; /* Alinea el texto al principio de la celda */
 }
@@ -131,19 +118,98 @@ h1.venta{
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Asegura que la imagen se comporte como un bloque */
 }
-/* Estilo para enlaces con la clase active1 */
-a.active3{
-    color: black; /* Cambia el color del texto a blanco */
-    transition: .8s; /* Transición suave */
-    font-size: 20px; /* Tamaño del texto */
-    padding: 7px 50px; /* Agrega un relleno interno alrededor del texto de los enlaces */
-    border-radius: 20px; /* Redondea las esquinas del fondo de los enlaces */
+
+
+/* Estilo para la sección de "Visita" */
+/* Estilo general para la tabla */
+.info-table {
+    width: 80%; /* Ajusta el ancho de la tabla para que no ocupe todo el ancho de la página */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-spacing: 20px; /* Espacio entre las celdas para que no estén tan juntas */
 }
 
-a.active3:hover {
-    background: black; /* Fondo negro solo al pasar el cursor */
-    color: white; /* Mantiene el texto blanco al pasar el cursor */
+/* Estilo para las celdas de la tabla */
+.info-table td {
+    vertical-align: top; /* Alinea el contenido al principio de la celda */
+    padding: 10px; /* Relleno interno para dar espacio dentro de las celdas */
+    display: flex; /* Usa flexbox para alinear la imagen y el texto */
+    align-items: flex-start; /* Alinea la imagen y el texto en la parte superior */
+    color: black; /* Color del texto */
+}
 
+/* Estilo para las imágenes dentro de las celdas */
+.info-table img {
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para los contenedores de texto */
+.text-container {
+    max-width: calc(100% - 65px); /* Asegura que el texto no sobrepase el espacio disponible junto a la imagen */
+}
+
+/* Estilo para los títulos */
+.info-table h2 {
+    font-size: 24px; /* Tamaño de fuente para los títulos */
+    margin: 0 0 10px 0; /* Espaciado debajo del título */
+    color: black; /* Color negro para los títulos */
+}
+
+/* Estilo para los párrafos */
+.info-table p {
+    font-size: 16px; /* Tamaño de fuente para el texto */
+    margin: 0; /* Elimina el margen alrededor del texto */
+    color: black; /* Color negro para el texto */
+}
+
+
+/* Estilo general para la tabla visita*/
+.visita-section {
+    width: 80%; /* Ajusta el ancho de la tabla para centrarla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-spacing: 20px; /* Espacio entre las celdas */
+}
+/* Estilo para el título de la sección */
+.section-title {
+    text-align: center; /* Centra el texto */
+    font-size: 44px; /* Tamaño de la letra del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: black; /* Color del título */
+}
+/* Estilo para las celdas de la tabla visita */
+.visita-section td {
+    vertical-align: top; /* Alinea el contenido al principio de la celda */
+    padding: 10px; /* Relleno interno */
+    display: flex; /* Flexbox para organizar la imagen y el texto */
+    align-items: flex-start; /* Alinea la imagen y el texto en la parte superior */
+    color: black; /* Color del texto */
+}
+
+/* Estilo para las imágenes */
+.visita-section img {
+    width: 50px; /* Tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Contenedor de texto */
+.visita-text {
+    max-width: calc(100% - 65px); /* Espacio para el texto */
+}
+
+/* Estilo para los títulos */
+.visita-section h2 {
+    font-size: 34px; /* Tamaño de los títulos */
+    margin: 0 0 10px 0; /* Espaciado debajo del título */
+    color: black; /* Color del título */
+}
+
+/* Estilo para el texto */
+.visita-section p {
+    font-size: 24px; /* Tamaño del texto */
+    margin: 0; /* Elimina el margen alrededor del texto */
+    color: black; /* Color del texto */
 }
 
 /* Estilo para enlaces con la clase active2 */
