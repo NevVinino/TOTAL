@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GatoNegro</title>
     <link rel="icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrusel.css">
     <link rel="stylesheet" href="footer.css">
@@ -13,23 +14,30 @@
 </head>
 <body>
     <nav>
-        <img class="log" src="img/logo2.png" alt="logoempresa" usemap="#log">
-        <map name="log">
-            <area shape="circle" coords="1253,132,1321" href="gatonegro.html" alt="">
-        </map>
-        <label class="logo">
-            <a style="color:yellow" class="gatonegro" href="gatonegro.html">Gato Negro</a>
-        </label>
-        <ul>
+        <div class="nav-header">
+            <img class="log" src="img/logo2.png" alt="logoempresa" usemap="#log">
+            <map name="log">
+                <area shape="circle" coords="1253,132,1321" href="gatonegro.html" alt="">
+            </map>
+            <label class="logo">
+                <a style="color:yellow" class="gatonegro" href="gatonegro.html">Gato Negro</a>
+            </label>
+            <!-- Botón para mostrar el menú -->
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i> <!-- Icono de menú -->
+            </button>
+        </div>
+        <ul class="nav-menu">
             <li><a class="active" href="gatonegro.html">Inicio</a></li>
             <li><a class="active" href="Nosotros.html">Sobre Nosotros</a></li>
             <li><a class="active" href="Especialidades.html">Nuestras Especialidades</a></li>
             <li><a class="active" href="Cursos.html">Cursos</a></li>
             <li><a class="active" href="Contactanos.html">Contactanos</a></li>
-            <li><a class="active" href="Blog.html">Blog</a> </li>
+            <li><a class="active" href="Blog.html">Blog</a></li>
         </ul>
     </nav>
- 
+
+
     <div class="carrousel">
         <div class="conteCarrousel">
             <div class="itemCarrousel" id="itemCarrousel-1">
@@ -42,14 +50,16 @@
                 <div class="itemCarrouselTarjeta">
                     <img src="img/dog.jpg" alt="">
                     <div class="textOverlay21">Expertos en salud animal </div>
-                    <div class="textOverlay22">Diagnóstico certero y tratamientos personalizados para tu mejor amigo</div>
+                    <div class="textOverlay22">Diagnóstico certero y tratamientos</div>
+                    <div class="textOverlay23">personalizados para tu mejor amigo</div>
                 </div>
             </div>
             <div class="itemCarrousel" id="itemCarrousel-3">
                 <div class="itemCarrouselTarjeta">
                     <img src="img/cat1.jpg" alt="">
-                    <div class="textOverlay31">Un hogar feliz comienza con una mascota sana</div>
-                    <div class="textOverlay32">¡Visítanos y comprúebalo!</div>
+                    <div class="textOverlay31">Un hogar feliz comienza</div>
+                    <div class="textOverlay32">con una mascota sana</div>
+                    <div class="textOverlay33">¡Visítanos y comprúebalo!</div>
                 </div>
             </div>
         </div>
@@ -70,7 +80,7 @@
     <br>
     <table class="ini">
         
-        <h1 class="venta">...Venta de articulos...</h1>
+        <h1 class="venta">...Nuestros Servicios...</h1>
         <tr>
             <td>
                 <img src="img/gatonegro.png" alt="">
@@ -179,7 +189,7 @@
 
     <!--Codigo JS abajo (ponerlos todos ahi. sino fallan)-->
     <script src="carrusel.js"></script>
-
+    <script src="boton.js"></script>
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -222,7 +232,7 @@
                         <td>
                             <h3>Contáctanos</h3>
                             <ul>
-                                <li>Dirección:  Av. General Trinidad Morán 653 Lince</li>
+                                <li>Dirección:  Av. 0000000 0000000 000 000 0000</li>
                                 <li>Correo: infogatonegro@gmail.com</li>
                                 <li>Horario: <br>Lunes a viernes: 9:00 am a 9:00 pm <br>Sábado: 10:00 am a 6:00 pm</li>
                             </ul>
